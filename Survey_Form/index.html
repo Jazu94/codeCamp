@@ -1,0 +1,221 @@
+<style>
+    :root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green:
+     #37af65;
+}
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    /* font-weight: 400; */
+    line-height: 1.2;
+    color: var(--color-white);
+    margin: 0;
+
+    background-image: url("./noah-silliman-gzhyKEo_cbU-unsplash.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+
+header{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 100 ;
+    line-height: 1.2;
+    color: var(--color-white);
+    margin: 0;
+    text-align: center;
+
+}
+
+@media only screen and (max-width: 640px) {
+
+    header p {
+        color: var(--color-darkblue);
+    }
+
+}
+
+#main-form{
+    background : var(--color-darkblue) ;
+    padding: 2.5em;
+    border-radius: 0.25rem;
+    max-width: 600px;
+    margin: auto;
+    opacity: 0.9;
+}
+
+
+label {
+    color: var(--color-white);
+}
+
+h5{
+    color: var(--color-white)  !important;
+}
+
+
+</style>
+
+    <html>
+
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <main id="main">
+            <header>
+                <h1 id="title">freeCodeCamp Jazu94 Survey Form</h1>
+                <p id="description"><i>Thank you for taking the time to help us improve the platform</i></p>
+            </header>
+            <section id="main-form">
+                <form id="survey-form">
+                    <div class="form-group">
+                        <label for="name" id="name-label">Name</label>
+                        <input name="name" id="name" type="text" class="form-control" placeholder="Enter your name">
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" id="email-label">Email</label>
+                        <input name="name" id="email" type="email" class="form-control" placeholder="Enter your name">
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age" id="number-label">Age (optional)</label>
+                        <input name="age" id="age" type="number" min="1" max="50" class="form-control" placeholder="Enter your name">
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Which option best describes your current role?</label>
+                        <select name="rol" id="dropdown" class="form-control">
+                            <option selected disabled>Select current Role</option>
+                            <option>Student</option>
+                            <option>Practicum</option>
+                            <option>Intern</option>
+                            <option>Full time job</option>
+                        </select>
+
+                    </div>
+
+                    <div class="form-group" id="recomend">
+                        <h5  for="radio">Would you recommend freeCodeCamp to a friend?</h5>
+
+                        <div class=" form-inline">
+                            <label>
+                                <input type="radio" checked id="radio" name="radio" class="input-radio" value="Definitely">
+                                Definitely
+                            </label>
+                        </div>
+                        <div class=" form-inline">
+                            <label>
+                                <input type="radio" id="radio" name="radio" class="input-radio" value="Maybe">
+                                Maybe
+                            </label>
+                        </div>
+                        <div class=" form-inline">
+                            <label>
+                                <input type="radio" id="radio" name="radio" class="input-radio" value="No">
+                                Not Sure
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <h5>What is your favorite feature of freeCodeCamp? </h5>
+                        <select class="form-control">
+                            <option selected disabled>Select an option</option>
+                            <option class="form-control">Challenges</option>
+                            <option class="form-control">Projects</option>
+                            <option class="form-control">Comunnity</option>
+                            <option class="form-control">Open Source</option>
+
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <h5>What would you like to see improved? (Check all that apply)</h5>
+                        <label>
+                            <input type="checkbox" value="1" class="input-checkbox">
+                            Backend-Projects
+                        </label><br>
+
+                        <label>
+                            <input type="checkbox" value="2" class="input-checkbox">
+                            Frontend-Projects
+                        </label><br>
+
+                        <label>
+                            <input type="checkbox" value="3" class="input-checkbox">
+                            Data Visualization
+                        </label><br>
+
+                        <label>
+                            <input type="checkbox" value="4" class="input-checkbox">
+                            Challenges
+                        </label><br>
+
+                        <label>
+                            <input type="checkbox" value="5" class="input-checkbox">
+                            Open Source Community
+                        </label><br>
+
+                        <label>
+                            <input type="checkbox" value="6" class="input-checkbox">
+                            Gitter help rooms
+                        </label><br>
+
+                        <label>
+                            <input type="checkbox" value="7" class="input-checkbox">
+                            Videos
+                        </label><br>
+
+                        <label>
+                            <input type="checkbox" value="8" class="input-checkbox">
+                            City Meetups
+                        </label><br>
+
+                        <label>
+                            <input type="checkbox" value="9" class="input-checkbox">
+                            Wiki
+                        </label><br>
+
+                        <label>
+                            <input type="checkbox" value="10" class="input-checkbox">
+                            Forum
+                        </label><br>
+
+                        <label>
+                            <input type="checkbox" value="11" class="input-checkbox">
+                            Additional Courses
+                        </label><br>
+
+                    </div>
+
+                    <div class="form-group">
+                        <h5>Any comments or suggestions?</h5>
+                        <textarea class="form-control"   placeholder="Comments?"></textarea>
+
+                    </div>
+                    <div >
+
+                        <button id="submit" class="btn btn-success btn-block" type="button">Submit</button>
+                    </div>
+
+                </form>
+
+            </section>
+        </main>
+        
+    </body>
+</html>
